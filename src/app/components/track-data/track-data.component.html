@@ -1,0 +1,19 @@
+<section class="data-table">
+  <h2>Silverstone</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Time</th>
+      <th>Name</th>
+      <th>Timestamp</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let track of trackData">
+      <td>{{ track.time }}</td>
+      <td>{{ track.name }}</td>
+      <td>{{ track.timestamp | timeAgo }}</td>
+    </tr>
+    </tbody>
+  </table>
+</section>

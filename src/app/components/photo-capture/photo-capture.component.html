@@ -1,0 +1,4 @@
+<div class="photo-capture">
+  <input type="file" accept="image/*" (change)="onFileSelected($event)" capture="environment">
+  <img *ngIf="photo" [src]="photo" alt="Captured Photo">
+</div>
